@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - The Gallery Of Eli</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e1e2e 0%, #2d2d3d 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 10px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            font-size: 0.95em;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        .decorative-line {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            margin: 20px auto 40px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #ddd;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 25px;
+                font-size: 1em;
+            }
+
+            .nav-buttons {
+                gap: 10px;
+            }
+
+            .nav-button {
+                padding: 8px 20px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="nav-buttons">
+                <a href="home.html" class="nav-button">← Home</a>
+                <a href="index.html" class="nav-button">Gallery →</a>
+            </div>
+            <h1>About Me</h1>
+            <div class="decorative-line"></div>
+        </header>
+
+        <div class="content">
+            <p>This website showcases projects I created in my digital media class, highlighting both technical skills and creative ideas. I enjoy experimenting with new tools and styles, learning how design and technology can work together to communicate ideas in engaging ways.</p>
+        </div>
+    </div>
+</body>
+</html>
