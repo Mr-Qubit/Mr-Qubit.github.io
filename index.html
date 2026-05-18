@@ -50,6 +50,26 @@
             box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
         }
 
+        .about-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: inline-block;
+            padding: 10px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .about-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+        }
+
         h1 {
             font-size: 3em;
             margin-bottom: 10px;
@@ -225,6 +245,14 @@
                 margin-bottom: 20px;
                 display: block;
                 width: fit-content;
+                margin: 0 auto 10px;
+            }
+
+            .about-button {
+                position: static;
+                margin-bottom: 20px;
+                display: block;
+                width: fit-content;
                 margin: 0 auto 20px;
             }
 
@@ -256,6 +284,7 @@
     <div class="container">
         <header>
             <a href="home.html" class="home-button">← Home</a>
+            <a href="about.html" class="about-button">About Me →</a>
             <h1>Art Gallery</h1>
             <p class="subtitle">Explore our collection</p>
         </header>
@@ -356,3 +385,4 @@
     </script>
 </body>
 </html>
+
